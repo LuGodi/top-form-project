@@ -8,7 +8,9 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="left-container"><div class="logo"></div></div>
+      <div class="left-container">
+        <div class="logo"><span class="logo-text">BOO!</span></div>
+      </div>
       <div class="right-container">
         <h1>
           This is not a real online service, do not provide any real personal
@@ -18,11 +20,23 @@
         <div class="form-container">
           <h1>Let's gooo!</h1>
           <form>
-            <label for=""></label><input type="text" /> <label for=""></label
-            ><input type="text" /><label for=""></label
-            ><input type="text" /><label for=""></label
-            ><input type="text" /><label for=""></label
-            ><input type="text" /><label for=""></label><input type="text" />
+            <label for="name">Name <input type="text" id="name" /></label
+            ><label for="surname"
+              >Last Name<input type="text" id="surname" /></label
+            ><label for="email">Email<input type="email" /></label
+            ><label for="phone-number"
+              >Phone Number<input type="tel" id="phone-number" /></label
+            ><label for="password"
+              >Password<input
+                type="password"
+                id="password"
+                class="error" /></label
+            ><label for="password-confirmation"
+              >Confirm Password<input
+                type="password"
+                id="password-confirmation"
+                class="error"
+            /></label>
           </form>
         </div>
         <div class="button-container">

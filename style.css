@@ -26,8 +26,8 @@ body {
 }
 
 .left-container {
-  flex-basis: 37.7%;
-  background-image: url(./assets/background-img.jpg);
+  flex-basis: 47.7%;
+  background-image: url(./assets/background-halloween.jpg);
   background-size: cover;
 
   background-repeat: no-repeat;
@@ -35,21 +35,33 @@ body {
   justify-content: center;
 }
 .left-container .logo {
-  height: 20vh;
+  height: 15vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(125, 59, 27, 0.2);
   background-image: url(./assets/odin-lined.png);
+  opacity: 0.5;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 
   margin-top: 7rem;
   background-clip: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.left-container .logo .logo-text {
+  font-size: 40px;
+  color: white;
+  margin-left: auto;
+  flex-basis: 50%;
 }
 .right-container {
   flex-grow: 1;
   align-self: center;
-  height: 80vh;
+  min-height: 80vh;
+  height: fit-content;
 }
 
 .right-container > h1 {
@@ -61,17 +73,31 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 50vh;
+  min-height: 50vh;
   padding: 1rem 4rem;
   margin-top: 14.5vh;
   box-shadow: 5px 5px 3px 1px #bfbfbf;
 }
 .form-container form {
   display: flex;
-  gap: 5px;
+  gap: 3rem 4rem;
   flex-wrap: wrap;
+  align-content: center;
+  flex: 1;
 }
-
+.form-container form > * {
+  flex-basis: 30%;
+}
+/*como a label ta em cima vou precisar por todos em uma div */
+.form-container form input {
+  display: block;
+  border: solid 1px #e5e7eb;
+  width: 100%;
+  flex: 1;
+  height: 1.5rem;
+  border-radius: 5px;
+  padding: 15px;
+}
 .button-container {
   display: flex;
   flex-direction: column;
