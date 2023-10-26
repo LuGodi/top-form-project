@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea,
+select,
+button {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(249, 250, 251);
+}
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgb(249, 250, 251);
+}
+
+.left-container {
+  flex-basis: 37.7%;
+  background-image: url(./assets/background-img.jpg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.left-container .logo {
+  height: 20vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(./assets/odin-lined.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-top: 7rem;
+  background-clip: content-box;
+}
+.right-container {
+  flex-grow: 1;
+  align-self: center;
+  height: 80vh;
+}
+
+.right-container > h1 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 50vh;
+  padding: 1rem 4rem;
+  margin-top: 14.5vh;
+  box-shadow: 5px 5px 3px 1px #bfbfbf;
+}
+.form-container form {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+  padding-left: 4rem;
+  gap: 1rem;
+}
+
+.button-container button {
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+}
