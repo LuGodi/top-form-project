@@ -12,6 +12,3 @@ passwordConfirmationInput.addEventListener("input", (e) => {
     passwordConfirmationInput.classList.remove("error");
   }
 });
-
-console.log(passwordInput);
-console.log(passwordConfirmationInput);
