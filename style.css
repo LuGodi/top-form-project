@@ -84,19 +84,40 @@ body {
   flex-wrap: wrap;
   align-content: center;
   flex: 1;
+  max-width: 600px;
 }
 .form-container form > * {
-  flex-basis: 30%;
+  min-width: 30%;
+  flex-grow: 1;
+}
+.form-container form label {
+  display: block;
 }
 /*como a label ta em cima vou precisar por todos em uma div */
 .form-container form input {
   display: block;
   border: solid 1px #e5e7eb;
-  width: 100%;
   flex: 1;
   height: 1.5rem;
   border-radius: 5px;
   padding: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.form-container form input:focus {
+  border: 1px solid blue;
+  box-shadow: 5px 5px 3px 1px #bfbfbf;
+  outline: none;
+}
+
+.form-container form input:invalid {
+  border: 1px solid red;
+}
+.form-container form input.error:invalid + span::after {
+  content: "* Passwords do not match";
+  position: absolute;
+  color: red;
 }
 .button-container {
   display: flex;
@@ -112,4 +133,7 @@ body {
   border-radius: 5px;
   border: none;
   font-size: 1.1rem;
+  background-color: #9d4900;
+  color: white;
+  font-weight: bolder;
 }

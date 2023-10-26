@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Odin Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="main-container">
@@ -19,7 +20,7 @@
 
         <div class="form-container">
           <h1>Let's gooo!</h1>
-          <form>
+          <form method="post" action="/" id="subscribe">
             <label for="name">Name <input type="text" id="name" /></label
             ><label for="surname"
               >Last Name<input type="text" id="surname" /></label
@@ -30,17 +31,19 @@
               >Password<input
                 type="password"
                 id="password"
-                class="error" /></label
+                class="error"
+                required /><span class="display-password-error"></span></label
             ><label for="password-confirmation"
               >Confirm Password<input
                 type="password"
                 id="password-confirmation"
                 class="error"
+                required
             /></label>
           </form>
         </div>
         <div class="button-container">
-          <button type="submit">Create Account</button
+          <button type="submit" form="subscribe">Create Account</button
           ><span>Already have an account? Log in</span>
         </div>
       </div>
