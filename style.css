@@ -27,11 +27,11 @@ body {
   display: flex;
   min-height: 100vh;
   width: 100vw;
-  background-color: rgb(249, 250, 251);
+  background-color: rgb(12, 12, 24);
 }
 
 .left-container {
-  flex-basis: 47.7%;
+  flex-basis: 30%;
   background-image: url(./assets/background-halloween.jpg);
   background-size: cover;
 
@@ -42,7 +42,6 @@ body {
 }
 .left-container .logo {
   height: 15vh;
-  width: 100%;
   background-color: rgba(125, 59, 27, 0.2);
   background-image: url(./assets/odin-lined.png);
   opacity: 0.5;
@@ -73,18 +72,19 @@ body {
 .right-container > h1 {
   padding-left: 4rem;
   padding-right: 4rem;
-  text-align: center;
+
   margin-top: 2rem;
+  color: #f94d0c;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #f94d0c;
   min-height: 50vh;
   padding: 1rem 4rem;
   margin-top: 10vh;
-  box-shadow: 5px 5px 3px 1px #bfbfbf;
+  box-shadow: 5px 5px 3px 1px #000;
 }
 .form-container form {
   display: flex;
@@ -115,18 +115,18 @@ body {
 
 .form-container form input:focus {
   border: 1px solid blue;
-  box-shadow: 5px 5px 3px 1px #bfbfbf;
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.4);
   outline: none;
 }
 
 .form-container form input:invalid {
-  border: 1px solid red;
+  border: 3px solid rgb(233, 15, 15);
 }
 .form-container form input.error:invalid + span::after,
 .form-container form input.error + span::after {
   content: "* Passwords do not match";
   position: absolute;
-  color: red;
+  color: rgb(197, 3, 3);
 }
 .button-container {
   display: flex;
@@ -145,6 +145,9 @@ body {
   background-color: #9d4900;
   color: white;
   font-weight: bolder;
+}
+.button-container span {
+  color: white;
 }
 
 .photo-credit-container {
